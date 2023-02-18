@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="heading-secondary">Weather app</h1>
+    <main class="app-container">
+      <form id="input-form">
+        <!-- label -->
+        <!-- <label for="city-input">Enter a location for weather information</label> -->
+        <!-- input -->
+        <input
+          type="text"
+          name="userinput"
+          id="city-input"
+          placeholder="Enter a location for weather information"
+        />
+
+        <!-- btn -->
+        <!-- <input type="submit" value="Search" class="btn" /> -->
+        <button type="submit" class="btn">
+          Search
+          <svg id="svg-container" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="28.586" height="25.964" viewBox="0 0 28.586 25.964">
+            <g id="svg-item" data-name="Layer 1">
+              <polygon points="15.604 0 13.13 2.475 23.637 12.981 13.13 23.489 15.604 25.964 28.586 12.981 15.604 0" fill="#fff"/>
+              <rect y="11.231" width="26.111" height="3.5" fill="#fff"/>
+            </g>
+        </button>
+      </form>
+
+      <img class="d-none"
+        src="/assets/pexels-gabriela-palai-395196.jpg"
+        alt="weather conditions"
+      />
+
+      <div class="results d-none">
+        <p id="city"><span>city</span>London</p>
+        <p id="weather"><span>weather</span>Rainy</p>
+        <p id="temperature"><span>temperature</span>5C</p>
+      </div>
+    </main>
+
+    <script src="/scripts/forecast.js"></script>
+  </body>
+</html>

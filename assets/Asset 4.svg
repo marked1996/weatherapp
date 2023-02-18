@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+          <svg
+            id="svg-container"
+            data-name="Layer 2"
+            xmlns="http://www.w3.org/2000/svg"
+            width="25.775"
+            height="23.843"
+            viewBox="0 0 25.775 23.843"
+          >
+            <g id="svg-item" data-name="Layer 1">
+              <polygon
+                points="13.854 0 12.44 1.414 22.947 11.921 12.44 22.429 13.854 23.843 25.775 11.921 13.854 0"
+                fill="#fff"
+              />
+              <rect y="10.921" width="24.611" height="2" fill="#fff" />
+            </g>
+          </svg>

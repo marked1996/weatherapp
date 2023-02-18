@@ -1,0 +1,151 @@
+:root {
+  --dark-gray: #161618;
+  --black: #0c0c0c;
+  --gray: #4e4e55;
+  --white: #ffffff;
+  --headingPrimary: clamp(64px, 6vw, 9rem);
+  --headingSecondary: clamp(48px, 3.5vw, 5rem);
+  --headingTerciary: clamp(28px, 2vw, 3rem);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  min-height: 100vh;
+  background-color: var(--black);
+  color: white;
+}
+
+/* BUTTON STYLES */
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--gray);
+  font-size: clamp(28px, 2vw, 32px);
+  transition: color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  color: var(--white);
+}
+
+.btn:hover #svg-container {
+  transform: translateX(0);
+}
+
+.btn:hover #svg-item rect {
+  opacity: 1;
+}
+
+.btn:hover #svg-item polygon {
+  fill: var(--white);
+}
+
+#svg-container {
+  height: 20px;
+  transform: translateX(-6px);
+  transition: transform 0.15s ease-in-out;
+}
+
+#svg-item polygon {
+  fill: var(--gray);
+  transition: fill 0.2s ease-in-out;
+}
+#svg-item rect {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+/* HEADING STYLES */
+.heading-xxl {
+  font-size: clamp(100px, 10vw, 14rem);
+  font-weight: 500;
+  letter-spacing: -10px;
+}
+
+.heading-primary {
+  font-size: var(--headingPrimary);
+  font-weight: 500;
+  letter-spacing: -6px;
+}
+.heading-secondary {
+  font-size: var(--headingSecondary);
+  font-weight: 500;
+  letter-spacing: -4px;
+}
+.heading-terciary {
+  font-size: var(--headingTerciary);
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 780px;
+  width: 95vw;
+  gap: 1rem;
+}
+
+#input-form {
+  display: grid;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px 16px;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: var(--dark-gray);
+  font-size: 1.5rem;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+input[type="text"]::placeholder {
+  font-size: 1.25rem;
+}
+
+.app-container img {
+  border-radius: 1rem;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: var(--dark-gray);
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.results span {
+  color: var(--gray);
+  font-size: 1rem;
+  padding-right: 0.5rem;
+}
+
+.results .error {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.d-none {
+  display: none;
+}
